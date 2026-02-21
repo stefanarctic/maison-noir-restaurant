@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Noir — Fine Dining</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="custom-cursor-enabled">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="#" class="nav-logo">Maison Noir</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#chef">Chef</a></li>
+    <li><a href="#private">Private Dining</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#reserve" class="nav-reserve">Reserve a Table</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  
+  <div class="plate-rings" aria-hidden="true">
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="plate-center">
+      <div class="plate-icon">🍽</div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-label">Paris, Since 1987</div>
+    <h1 class="hero-title">
+      Where Art<br>Meets
+      <em>Cuisine</em>
+    </h1>
+    <p class="hero-subtitle">Contemporary French Gastronomy</p>
+    <p class="hero-desc">
+      An intimate journey through the finest seasonal ingredients, 
+      transformed by our Michelin-starred kitchen into unforgettable moments 
+      of culinary artistry.
+    </p>
+    <div class="hero-cta">
+      <a href="#reserve" class="btn-primary">Reserve Your Evening</a>
+      <a href="#menu" class="btn-secondary">Explore the Menu</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat reveal">
+    <span class="stat-num">3</span>
+    <span class="stat-label">Michelin Stars</span>
+  </div>
+  <div class="stat reveal reveal-delay-1">
+    <span class="stat-num">37</span>
+    <span class="stat-label">Years of Excellence</span>
+  </div>
+  <div class="stat reveal reveal-delay-2">
+    <span class="stat-num">12</span>
+    <span class="stat-label">Seasonal Courses</span>
+  </div>
+  <div class="stat reveal reveal-delay-3">
+    <span class="stat-num">#4</span>
+    <span class="stat-label">World's Best Restaurants</span>
+  </div>
+</div>
+
+<section class="gallery" id="gallery">
+  <div class="section-tag reveal">Through the Lens</div>
+  <h2 class="reveal">A Glimpse <em>Inside</em></h2>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item gallery-item-large gallery-popup" data-src="assets/hero-restaurant.jpg" style="background-image: url('assets/hero-restaurant.jpg')"></div>
+    <div class="gallery-item gallery-popup" data-src="assets/dish-sole.jpg" style="background-image: url('assets/dish-sole.jpg')"></div>
+    <div class="gallery-item gallery-popup" data-src="assets/dish-dessert.jpg" style="background-image: url('assets/dish-dessert.jpg')"></div>
+    <div class="gallery-item gallery-popup" data-src="assets/wine-cellar.jpg" style="background-image: url('assets/wine-cellar.jpg')"></div>
+    <div class="gallery-item gallery-popup" data-src="assets/private-dining.jpg" style="background-image: url('assets/private-dining.jpg')"></div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="exp-visual reveal">
+    <div class="exp-card exp-card-main exp-card-about"></div>
+    <!-- <div class="exp-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/>
+      </svg>
+    </div> -->
+  </div>
+  <div class="exp-text">
+    <div class="section-tag reveal">Our Philosophy</div>
+    <h2 class="reveal">An <em>Experience</em><br>Beyond the Plate</h2>
+    <p class="reveal">
+      Every dish tells a story — of the farmers who tend our ingredients, 
+      the seasons that shape our flavors, and the centuries of French culinary 
+      tradition we honor and reimagine.
+    </p>
+    <p class="reveal">
+      Chef Pierre Dubois leads our team through a daily ritual of discovery, 
+      visiting local markets at dawn to select only what nature's peak has to offer.
+    </p>
+    <div class="exp-features reveal">
+      <div class="feature-item"><div class="feature-dot"></div>Seasonal tasting menus, renewed every 6 weeks</div>
+      <div class="feature-item"><div class="feature-dot"></div>Exclusive cellar with 800+ curated wine selections</div>
+      <div class="feature-item"><div class="feature-dot"></div>Private dining rooms for intimate occasions</div>
+      <div class="feature-item"><div class="feature-dot"></div>Chef's table experience — watch the kitchen at work</div>
+    </div>
+  </div>
+</section>
+
+<section class="chef-section" id="chef">
+  <div class="chef-content">
+    <div class="section-tag reveal">Meet the Master</div>
+    <h2 class="reveal">Chef <em>Pierre Dubois</em></h2>
+    <p class="reveal">Born in Lyon and trained under the greats of French gastronomy, Chef Dubois has spent three decades perfecting the art of seasonal, ingredient-driven cuisine. His philosophy: let nature lead, and technique follow.</p>
+    <p class="reveal">Before Maison Noir, he earned his stars at L'Auberge du Pont de Collonges and Le Bernardin. Today, he leads our kitchen with humility and an unwavering commitment to excellence.</p>
+    <div class="chef-awards reveal">
+      <span>3 Michelin Stars</span>
+      <span>•</span>
+      <span>World's 50 Best</span>
+      <span>•</span>
+      <span>Meilleur Ouvrier de France</span>
+    </div>
+  </div>
+  <div class="chef-image reveal">
+    <img src="assets/chef-portrait.jpg" alt="Chef Pierre Dubois">
+  </div>
+</section>
+
+<section class="private-dining" id="private">
+  <div class="private-image reveal" style="background-image: url('assets/private-dining.jpg')"></div>
+  <div class="private-content">
+    <div class="section-tag reveal">Exclusive</div>
+    <h2 class="reveal">Private <em>Dining</em></h2>
+    <p class="reveal">Host unforgettable celebrations in our intimate private rooms. From anniversaries to corporate gatherings, we tailor every detail to your vision.</p>
+    <ul class="private-features reveal">
+      <li>Salon Noir — up to 12 guests</li>
+      <li>Salon Or — up to 24 guests</li>
+      <li>Chef's Table — 6 guests, kitchen view</li>
+      <li>Custom menus & wine pairings</li>
+    </ul>
+    <a href="#reserve" class="btn-primary">Inquire</a>
+  </div>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-tag reveal">Tonight's Offering</div>
+      <h2 class="reveal">The <em>Menu</em></h2>
+    </div>
+    <div class="menu-tabs reveal">
+      <button class="tab active" data-tab="degustation">Dégustation</button>
+      <button class="tab" data-tab="carte">À La Carte</button>
+      <button class="tab" data-tab="wine">Wine Pairing</button>
+    </div>
+  </div>
+  <div class="menu-panels">
+    <div class="menu-panel active" id="degustation">
+      <p class="menu-panel-desc">12-course seasonal tasting menu — 285 € per person</p>
+      <div class="menu-grid reveal">
+        <article class="menu-item menu-item-card" data-image="assets/dish-caviar.jpg" data-ingredients="Ossetra caviar, Brioche feuilletée, Crème fraîche, Champagne gelée, Micro herbs" data-wine="Champagne Dom Pérignon 2012 — The delicate bubbles and subtle minerality elevate the caviar's briny sweetness." data-chef="We source our Ossetra from sustainable farms in the Caspian region. Each pearl is hand-selected for its buttery texture and clean finish." data-allergens="Gluten, Dairy, Fish">
+          <div class="menu-item-image" style="background-image: url('assets/dish-caviar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Amuse-bouche</div>
+            <h3>Caviar d'Ossetra</h3>
+            <p>Brioche feuilletée, crème fraîche légère, champagne gelée, micro herbs.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-foie-gras.jpg" data-ingredients="Duck foie gras, Sauternes, Fig brioche, Espelette pepper, Quince gel" data-wine="Sauternes Château d'Yquem 2015 — The wine's honeyed sweetness and acidity cut through the richness of the torchon." data-chef="Our torchon is cured for 48 hours with Sauternes and aromatics. The quince gel adds a touch of autumn that changes with the season." data-allergens="Gluten, Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-foie-gras.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Entrée</div>
+            <h3>Foie Gras Torchon</h3>
+            <p>Sauternes reduction, brioche aux figues, Espelette pepper, quince gel.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-lobster.jpg" data-ingredients="Blue lobster, Coral butter, Young leeks, Black truffle, Lobster bisque" data-wine="Meursault 1er Cru, Domaine des Comtes Lafon 2019 — The wine's richness mirrors the coral butter while its acidity cleanses the palate." data-chef="We use only wild blue lobster from Brittany. The coral butter is a house tradition—we reserve it from every lobster we prepare." data-allergens="Shellfish, Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-lobster.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Entrée</div>
+            <h3>Homard Bleu</h3>
+            <p>Blue lobster, coral butter, young leeks, black truffle shavings.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-sole.jpg" data-ingredients="Dover sole, Brown butter, Capers, Preserved lemon, Champagne beurre blanc, Chervil" data-wine="Meursault 1er Cru — The buttery texture of the wine echoes our beurre blanc while cutting through the sole's delicate flesh." data-chef="Dover sole is the king of flatfish. We source line-caught fish and prepare it in the classic meunière style—simple, precise, unforgettable." data-allergens="Fish, Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-sole.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Poisson</div>
+            <h3>Sole de Ligne Meunière</h3>
+            <p>Brown butter, capers, preserved lemon, champagne beurre blanc.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-scallops.jpg" data-ingredients="Saint-Jacques scallops, Cauliflower purée, Oscietra caviar, Brown butter emulsion" data-wine="Chablis Grand Cru — The wine's flinty minerality and citrus notes complement the scallop's sweetness." data-chef="Our scallops are hand-dived in the Bay of Saint-Brieuc. We serve them barely cooked—the center remains translucent, the edges caramelized." data-allergens="Shellfish, Fish, Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-scallops.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Poisson</div>
+            <h3>Saint-Jacques</h3>
+            <p>Scallops, cauliflower purée, caviar, brown butter emulsion.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-lamb.jpg" data-ingredients="Milk-fed lamb, Thyme jus, Gratin dauphinois, Spring vegetables, Persillade" data-wine="Château Margaux 2016 — A Grand Cru that demands respect. Its silky tannins and dark fruit elevate the lamb to another dimension." data-chef="Our lamb comes from Pauillac—the same terroir that produces Margaux. The animals graze on salt marshes, giving the meat a unique minerality." data-allergens="Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-lamb.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Viande</div>
+            <h3>Agneau de Lait Rôti</h3>
+            <p>Milk-fed lamb from Pauillac, jus au thym, gratin dauphinois.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-pigeon.jpg" data-ingredients="Pigeon de Bresse, Foie gras, Cherries, Port wine jus, Seasonal greens" data-wine="Château Margaux — The pigeon's gamey depth finds its match in this legendary Bordeaux." data-chef="Bresse pigeon is the only AOC poultry in France. We roast it pink and serve it with a port reduction that has been reducing for three days." data-allergens="Dairy">
+          <div class="menu-item-image" style="background-image: url('assets/dish-pigeon.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Viande</div>
+            <h3>Pigeon de Bresse</h3>
+            <p>Roasted pigeon, foie gras, cherries, jus au porto.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-cheese.jpg" data-ingredients="Selection of 8 French cheeses, Honeycomb, Walnut bread, Seasonal preserves" data-wine="Châteauneuf-du-Pape, Château Rayas 2018 — The wine's spice and red fruit bridge the gap between cheese and the coming dessert." data-chef="Our affineur visits weekly with cheeses at their peak. The selection changes with the season—always a balance of cow, goat, and sheep." data-allergens="Dairy, Gluten, Nuts">
+          <div class="menu-item-image" style="background-image: url('assets/dish-cheese.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Fromages</div>
+            <h3>Chariot de Fromages</h3>
+            <p>Curated selection with honeycomb, walnut bread, preserves.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-sorbet.jpg" data-ingredients="Lemon verbena sorbet, Elderflower, Italian meringue" data-wine="— A palate cleanser before dessert." data-chef="We grow lemon verbena in our rooftop garden. This pré-dessert resets the palate with its bright, herbal notes." data-allergens="Egg">
+          <div class="menu-item-image" style="background-image: url('assets/dish-sorbet.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Pré-dessert</div>
+            <h3>Coulant</h3>
+            <p>Lemon verbena sorbet, elderflower, meringue.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-dessert.jpg" data-ingredients="Grand Marnier soufflé, Vanilla crème anglaise, Candied orange zest, Feuilletine praline ice cream" data-wine="Riesling Spätlese, Egon Müller 2019 — The wine's honey and stone fruit dance with the orange and vanilla." data-chef="A soufflé waits for no one. We prepare it to order—the secret is in the timing and the quality of our vanilla from Madagascar." data-allergens="Egg, Dairy, Gluten">
+          <div class="menu-item-image" style="background-image: url('assets/dish-dessert.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Dessert</div>
+            <h3>Soufflé Grand Marnier</h3>
+            <p>Hot soufflé, vanilla crème anglaise, candied orange zest.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-petits-fours.jpg" data-ingredients="House chocolates, Macarons, Madeleines, Seasonal confections" data-wine="— Served with coffee, tea, or a digestif of your choice." data-chef="Our pastry chef prepares these daily. The madeleines are baked to order—warm, with a hint of brown butter." data-allergens="Gluten, Dairy, Eggs, Nuts">
+          <div class="menu-item-image" style="background-image: url('assets/dish-petits-fours.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Mignardises</div>
+            <h3>Petits Fours</h3>
+            <p>Chocolates, macarons, madeleines, seasonal confections.</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="menu-panel" id="carte">
+      <p class="menu-panel-desc">Select from our à la carte offerings</p>
+      <div class="menu-grid reveal">
+        <article class="menu-item menu-item-card" data-image="assets/dish-caviar.jpg" data-ingredients="Ossetra caviar, Brioche feuilletée, Crème fraîche, Champagne gelée" data-wine="Champagne Dom Pérignon 2012" data-chef="Hand-selected Ossetra from sustainable Caspian farms." data-allergens="Gluten, Dairy, Fish" data-price="38">
+          <div class="menu-item-image" style="background-image: url('assets/dish-caviar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Amuse-bouche</div>
+            <h3>Caviar d'Ossetra</h3>
+            <p>Brioche feuilletée, crème fraîche légère, champagne gelée.</p>
+            <span class="menu-price">38 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-foie-gras.jpg" data-ingredients="Duck foie gras, Sauternes, Fig brioche, Quince gel" data-wine="Sauternes Château d'Yquem 2015" data-chef="48-hour cured torchon with Sauternes and aromatics." data-allergens="Gluten, Dairy" data-price="54">
+          <div class="menu-item-image" style="background-image: url('assets/dish-foie-gras.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Entrée</div>
+            <h3>Foie Gras Torchon</h3>
+            <p>Sauternes reduction, brioche aux figues, quince gel.</p>
+            <span class="menu-price">54 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-lobster.jpg" data-ingredients="Blue lobster, Coral butter, Young leeks, Black truffle" data-wine="Meursault 1er Cru 2019" data-chef="Wild blue lobster from Brittany with house coral butter." data-allergens="Shellfish, Dairy" data-price="72">
+          <div class="menu-item-image" style="background-image: url('assets/dish-lobster.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Entrée</div>
+            <h3>Homard Bleu</h3>
+            <p>Blue lobster, coral butter, young leeks, black truffle.</p>
+            <span class="menu-price">72 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-sole.jpg" data-ingredients="Dover sole, Brown butter, Capers, Beurre blanc" data-wine="Meursault 1er Cru" data-chef="Line-caught Dover sole, classic meunière preparation." data-allergens="Fish, Dairy" data-price="62">
+          <div class="menu-item-image" style="background-image: url('assets/dish-sole.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Poisson</div>
+            <h3>Sole de Ligne Meunière</h3>
+            <p>Brown butter, capers, preserved lemon, beurre blanc.</p>
+            <span class="menu-price">62 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-scallops.jpg" data-ingredients="Saint-Jacques, Cauliflower purée, Caviar, Brown butter" data-wine="Chablis Grand Cru" data-chef="Hand-dived scallops from Saint-Brieuc, barely cooked." data-allergens="Shellfish, Fish, Dairy" data-price="58">
+          <div class="menu-item-image" style="background-image: url('assets/dish-scallops.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Poisson</div>
+            <h3>Saint-Jacques</h3>
+            <p>Scallops, cauliflower purée, caviar, brown butter.</p>
+            <span class="menu-price">58 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-lamb.jpg" data-ingredients="Milk-fed lamb, Thyme jus, Gratin dauphinois" data-wine="Château Margaux 2016" data-chef="Pauillac lamb from salt marsh pastures." data-allergens="Dairy" data-price="78">
+          <div class="menu-item-image" style="background-image: url('assets/dish-lamb.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Viande</div>
+            <h3>Agneau de Lait Rôti</h3>
+            <p>Milk-fed lamb, jus au thym, gratin dauphinois.</p>
+            <span class="menu-price">78 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-pigeon.jpg" data-ingredients="Pigeon de Bresse, Foie gras, Cherries, Port jus" data-wine="Château Margaux" data-chef="AOC Bresse pigeon, roasted pink, three-day port reduction." data-allergens="Dairy" data-price="68">
+          <div class="menu-item-image" style="background-image: url('assets/dish-pigeon.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Viande</div>
+            <h3>Pigeon de Bresse</h3>
+            <p>Roasted pigeon, foie gras, cherries, jus au porto.</p>
+            <span class="menu-price">68 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-cheese.jpg" data-ingredients="8 French cheeses, Honeycomb, Walnut bread" data-wine="Châteauneuf-du-Pape 2018" data-chef="Weekly selection from our affineur at peak ripeness." data-allergens="Dairy, Gluten, Nuts" data-price="28">
+          <div class="menu-item-image" style="background-image: url('assets/dish-cheese.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Fromages</div>
+            <h3>Chariot de Fromages</h3>
+            <p>Curated selection with honeycomb, walnut bread.</p>
+            <span class="menu-price">28 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-dessert.jpg" data-ingredients="Grand Marnier soufflé, Crème anglaise, Candied orange" data-wine="Riesling Spätlese 2019" data-chef="Prepared to order—the soufflé waits for no one." data-allergens="Egg, Dairy, Gluten" data-price="22">
+          <div class="menu-item-image" style="background-image: url('assets/dish-dessert.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Dessert</div>
+            <h3>Soufflé Grand Marnier</h3>
+            <p>Hot soufflé, vanilla crème anglaise, candied orange.</p>
+            <span class="menu-price">22 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-card" data-image="assets/dish-tarte-tatin.jpg" data-ingredients="Caramelized apples, Puff pastry, Crème fraîche ice cream" data-wine="Riesling or dessert wine" data-chef="Classic Tatin—upside-down, caramelized, served warm." data-allergens="Gluten, Dairy" data-price="18">
+          <div class="menu-item-image" style="background-image: url('assets/dish-tarte-tatin.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Dessert</div>
+            <h3>Tarte Tatin</h3>
+            <p>Caramelized apple tart, crème fraîche ice cream.</p>
+            <span class="menu-price">18 €</span>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="menu-panel" id="wine">
+      <p class="menu-panel-desc">Sommelier's selection — 6 glasses paired with tasting menu — 85 €</p>
+      <div class="menu-grid reveal">
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Champagne Dom Pérignon 2012 — Épernay. Notes of brioche, citrus, and white flowers. The delicate bubbles and minerality elevate the caviar's briny sweetness." data-pairing="Amuse-bouche & Caviar d'Ossetra">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Amuse & Caviar</div>
+            <h3>Champagne Dom Pérignon</h3>
+            <p>Vintage 2012, Épernay</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Sauternes Château d'Yquem 2015 — Bordeaux. Liquid gold with honey, apricot, and botrytis complexity. The wine's sweetness and acidity cut through the richness of the torchon." data-pairing="Foie Gras Torchon">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Foie Gras</div>
+            <h3>Sauternes Château d'Yquem</h3>
+            <p>2015, Bordeaux</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Meursault 1er Cru, Domaine des Comtes Lafon 2019 — Côte de Beaune. Rich, buttery, with notes of hazelnut and white stone fruit. Mirrors the coral butter while its acidity cleanses the palate." data-pairing="Homard Bleu & Sole Meunière">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Homard & Sole</div>
+            <h3>Meursault 1er Cru</h3>
+            <p>Domaine des Comtes Lafon, 2019</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Château Margaux 2016 — Grand Cru Classé, Margaux. Silky tannins, dark fruit, violet, and cedar. A wine that demands respect—its elegance elevates the lamb to another dimension." data-pairing="Agneau de Lait & Pigeon de Bresse">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Agneau & Pigeon</div>
+            <h3>Château Margaux</h3>
+            <p>Grand Cru Classé, 2016</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Châteauneuf-du-Pape, Château Rayas 2018 — Rhône Valley. Spice, red fruit, and garrigue. Bridges the gap between cheese and the coming dessert." data-pairing="Chariot de Fromages">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Fromages</div>
+            <h3>Châteauneuf-du-Pape</h3>
+            <p>Château Rayas, 2018</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+        <article class="menu-item menu-item-wine menu-item-card" data-image="assets/wine-cellar.jpg" data-wine="Riesling Spätlese, Egon Müller 2019 — Mosel. Honey, stone fruit, and delicate sweetness. The wine dances with the orange and vanilla of the soufflé." data-pairing="Soufflé Grand Marnier">
+          <div class="menu-item-image" style="background-image: url('assets/wine-cellar.jpg')"></div>
+          <div class="menu-item-body">
+            <div class="menu-item-tag">Dessert</div>
+            <h3>Riesling Spätlese</h3>
+            <p>Egon Müller, Mosel 2019</p>
+            <span class="menu-item-view">Discover</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reservation" id="reserve">
+  <div class="res-content">
+    <div class="section-tag" style="justify-content:center; margin-bottom:1rem">Book a Table</div>
+    <h2 class="reveal">Reserve Your<br><em>Evening</em></h2>
+    <p class="reveal">We recommend reserving at least 3 weeks in advance. Our team will confirm your booking within 24 hours.</p>
+    <div class="reveal">
+      <div class="res-form">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone Number">
+        <input type="date">
+        <input type="time" title="Preferred Time">
+        <select>
+          <option value="" disabled selected>Number of Guests</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5–8 Guests</option>
+          <option>Private Dining (9+)</option>
+        </select>
+      </div>
+      <button class="res-submit">Request Reservation</button>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="test-header">
+    <div>
+      <div class="section-tag reveal">Testimonials</div>
+      <h2 class="reveal">Voices of Our <em>Guests</em></h2>
+    </div>
+  </div>
+  <div class="test-grid">
+    <div class="testimonial reveal">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">A transcendent experience — each course arrived as if choreographed by the seasons themselves. The sommelier's wine pairings were simply revelatory.</p>
+      <div class="test-author">
+        <strong>Isabelle Fontaine</strong>
+        Paris, France
+      </div>
+    </div>
+    <div class="testimonial reveal reveal-delay-1">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">The lamb was the finest piece of meat I have tasted in thirty years of dining across Europe. Chef Dubois has an extraordinary gift for simplicity elevated to perfection.</p>
+      <div class="test-author">
+        <strong>James Wentworth</strong>
+        London, England
+      </div>
+    </div>
+    <div class="testimonial reveal reveal-delay-2">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">We celebrated our anniversary here and it could not have been more magical. The private room, the flowers, the attention to detail — a memory we will carry forever.</p>
+      <div class="test-author">
+        <strong>Naomi & Kenji Tanaka</strong>
+        Tokyo, Japan
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-section" id="location">
+  <div class="location-content">
+    <div class="section-tag reveal">Find Us</div>
+    <h2 class="reveal">12 Rue de la <em>Paix</em></h2>
+    <p class="reveal">75001 Paris, France<br>Métro: Opéra (Lines 3, 7, 8)</p>
+    <div class="location-details reveal">
+      <a href="tel:+33142605500" class="location-link">+33 1 42 60 55 00</a>
+      <a href="mailto:reservations@maisonnoir.fr" class="location-link">reservations@maisonnoir.fr</a>
+    </div>
+  </div>
+  <div class="location-map reveal">
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.328%2C48.867%2C2.336%2C48.872&layer=mapnik&marker=48.8694%2C2.3316" allowfullscreen="" loading="lazy" title="Maison Noir - 12 Rue de la Paix, Paris"></iframe>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="section-tag reveal">Questions</div>
+  <h2 class="reveal">Frequently <em>Asked</em></h2>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        <span>What is the dress code?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Smart casual to formal. We recommend jackets for gentlemen. We kindly ask that guests refrain from wearing shorts, sportswear, or flip-flops.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        <span>Do you accommodate dietary restrictions?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Yes. Please inform us of any allergies or dietary requirements when making your reservation. Our kitchen will prepare suitable alternatives with advance notice.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        <span>How far in advance should I book?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">We recommend reserving at least 3 weeks in advance for weekend evenings. For special occasions or groups of 6+, please book 4–6 weeks ahead.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        <span>Do you offer gift vouchers?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Yes. Gift vouchers are available in any amount. Contact us at reservations@maisonnoir.fr or call +33 1 42 60 55 00 to purchase.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">
+        <span>Is there a cancellation policy?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">We require 48 hours notice for cancellations. Late cancellations or no-shows may be charged the full tasting menu price per person.</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-brand">
+    <span class="logo">Maison Noir</span>
+    <p>12 Rue de la Paix, 75001 Paris, France<br><br>An intimate sanctuary of fine French cuisine, open Tuesday through Sunday.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Hours</h4>
+    <ul>
+      <li>Tue – Thu: 7pm – 10pm</li>
+      <li>Fri – Sat: 6:30pm – 11pm</li>
+      <li>Sunday: 6:30pm – 10pm</li>
+      <li>Monday: Closed</li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Explore</h4>
+    <ul>
+      <li><a href="#menu">Tasting Menu</a></li>
+      <li><a href="#menu">À La Carte</a></li>
+      <li><a href="#menu">Wine Pairing</a></li>
+      <li><a href="#private">Private Dining</a></li>
+      <li><a href="#faq">Gift Vouchers</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="tel:+33142605500">+33 1 42 60 55 00</a></li>
+      <li><a href="mailto:reservations@maisonnoir.fr">reservations@maisonnoir.fr</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="mailto:press@maisonnoir.fr">Press Inquiries</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2025 Maison Noir. All rights reserved.</span>
+  <span>Privacy Policy · Legal Notice</span>
+</div>
+
+<!-- Dish detail modal -->
+<div class="modal-overlay" id="dishModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-dish">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-dish-image"></div>
+    <div class="modal-dish-content">
+      <div class="modal-dish-tag"></div>
+      <h2 class="modal-dish-title"></h2>
+      <p class="modal-dish-desc"></p>
+      <div class="modal-dish-meta">
+        <div class="modal-meta-block" data-meta="ingredients">
+          <h4>Ingredients</h4>
+          <ul class="modal-ingredients"></ul>
+        </div>
+        <div class="modal-meta-block" data-meta="wine">
+          <h4>Sommelier's Pairing</h4>
+          <p class="modal-wine"></p>
+        </div>
+        <div class="modal-meta-block" data-meta="chef">
+          <h4>Chef's Note</h4>
+          <p class="modal-chef"></p>
+        </div>
+        <div class="modal-meta-block" data-meta="allergens">
+          <h4>Allergens</h4>
+          <p class="modal-allergens"></p>
+        </div>
+      </div>
+      <div class="modal-dish-price"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery lightbox -->
+<div class="lightbox-overlay" id="galleryLightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous image">‹</button>
+  <button class="lightbox-next" aria-label="Next image">›</button>
+  <img class="lightbox-image" src="" alt="">
+  <span class="lightbox-counter"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
